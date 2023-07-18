@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
         glue = "itads.minhthangtrantester.stepdefinitions",
         plugin = {"pretty", "html:target/cucumber-html-report.html"}
 )
+
 @Test
 public class runCucumberTest extends AbstractTestNGCucumberTests {
 
