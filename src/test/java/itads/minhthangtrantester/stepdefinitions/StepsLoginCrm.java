@@ -6,6 +6,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class StepsLoginCrm {
+    @Given("load data from excel")
+    public void loadDataFromExcel () {
+
+    }
+
     @Given("I am on the login page")
     public void iAmOnTheLoginPage() {
     }
@@ -22,7 +27,17 @@ public class StepsLoginCrm {
     public void iShouldBeTakenToTheDashboardPage() {
     }
 
-    @And("I should see the {string} menu")
-    public void iShouldSeeTheMenu(String arg0) {
+    @And("I should see the Customers menu")
+    public void iShouldSeeTheMenu() {
+    }
+
+    @Given("I enter wrong username and password")
+    public void iEnterWrongUsernameAndPassword () {
+
+    }
+
+    @Given("I should see an error message")
+    public void iShouldSeeAnErrorMessage () {
+
     }
 }
