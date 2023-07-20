@@ -40,4 +40,44 @@ public class StepsLoginCrm {
     public void iShouldSeeAnErrorMessage () {
 
     }
+
+    @Given("There are {string} cucumbers")
+    public void thereAreCucumbers(String arg0) {
+    }
+
+    @When("I eat {string} cucumbers")
+    public void iEatCucumbers(String arg0) {
+    }
+
+    @Then("I have {string} cucumbers")
+    public void iHaveCucumbers(String arg0) {
+    }
+
+    @When("I click on login by Line button")
+    public void iClickOnLoginByLineButton() {
+    }
+
+    @Then("I input Line username and password")
+    public void iInputLineUsernameAndPassword() {
+    }
+
+    @And("I click the Login by Line Button")
+    public void iClickTheLoginByLineButton() {
+    }
+
+    @Then("I should see the Dashboard Page")
+    public void iShouldSeeTheDashboardPage() {
+    }
+
+    @When("I click on forgot password")
+    public void iClickOnForgotPassword() {
+    }
+
+    @And("I input my email address")
+    public void iInputMyEmailAddress() {
+    }
+
+    @Then("I see the success message of changed password")
+    public void iSeeTheSuccessMessageOfChangedPassword() {
+    }
 }

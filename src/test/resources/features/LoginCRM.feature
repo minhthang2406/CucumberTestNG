@@ -19,3 +19,27 @@ Feature: Login to CRM
     When I enter wrong username and password
     And I click the Login button
     Then I should see an error message
+
+
+    Scenario Outline: Eating
+      Given There are "<firstCount>" cucumbers
+      When I eat "<ateCount>" cucumbers
+      Then I have "<left>" cucumbers
+
+      Examples:
+      | firstCount | ateCount | left |
+      | 15         | 5          | 10   |
+      | 20         | 5          | 15   |
+
+    Scenario: Login by Line Account
+      Given I am on the login page
+      When I click on login by Line button
+      Then I input Line username and password
+      And I click the Login by Line Button
+      Then I should see the Dashboard Page
+
+    Scenario: Forgot username and password
+      Given I am on the login page
+      When  I click on forgot password
+      And I input my email address
+      Then I see the success message of changed password
