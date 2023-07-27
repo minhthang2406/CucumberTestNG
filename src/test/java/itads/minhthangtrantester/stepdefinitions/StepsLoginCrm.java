@@ -80,4 +80,28 @@ public class StepsLoginCrm {
     @Then("I see the success message of changed password")
     public void iSeeTheSuccessMessageOfChangedPassword() {
     }
+
+    @Given("I am on the First Page")
+    public void iAmOnTheFirstPage() {
+    }
+
+    @When("I click on the button of Login by Username and Password")
+    public void iClickOnTheButtonOfLoginByUsernameAndPassword() {
+    }
+
+    @Then("I can see the Login Page of Username and Password")
+    public void iCanSeeTheLoginPageOfUsernameAndPassword() {
+    }
+
+    @And("I input my username and password")
+    public void iInputMyUsernameAndPassword() {
+    }
+
+    @And("I press sign in button")
+    public void iPressSignInButton() {
+    }
+
+    @Then("I can see the Dashboard page")
+    public void iCanSeeTheDashboardPage() {
+    }
 }

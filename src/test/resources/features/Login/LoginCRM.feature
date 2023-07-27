@@ -38,6 +38,14 @@ Feature: Login to CRM
       And I click the Login by Line Button
       Then I should see the Dashboard Page
 
+  Scenario: Login By Username and Password
+    Given I am on the First Page
+    When I click on the button of Login by Username and Password
+    Then I can see the Login Page of Username and Password
+    And I input my username and password
+    And I press sign in button
+    Then I can see the Dashboard page
+
     Scenario: Forgot username and password
       Given I am on the login page
       When  I click on forgot password

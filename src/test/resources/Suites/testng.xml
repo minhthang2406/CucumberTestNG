@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "All test suite">
+    <test name = "Run Gerkin">
+        <classes>
+            <class name="loginTestRunner"></class>
+        </classes>
+    </test>
+</suite>
