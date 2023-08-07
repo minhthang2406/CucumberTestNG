@@ -5,6 +5,8 @@ Feature: Login to CRM
   Background: load data test from excel file
     Given load data from excel
 
+
+  @login_success
   Scenario: Successful login
     Given I am on the login page
     When I enter my username and password
@@ -13,13 +15,24 @@ Feature: Login to CRM
     And I should see the Customers menu
 
 
+  @login_failed
+  Scenario: Failure login with invalid username
+    Given I am on the login page
+    When I enter wrong username
+    And I click the Login button
+    Then I should see an error message
 
-  Scenario: Failure login
+  Scenario: Failure login with invalid password
+    Given I am on the login page
+    When I enter wrong password
+    And I click the Login button
+    Then I should see an error message
+
+  Scenario: Failure login with invalid username and password
     Given I am on the login page
     When I enter wrong username and password
     And I click the Login button
     Then I should see an error message
-
 
     Scenario Outline: Eating
       Given There are "<firstCount>" cucumbers
